@@ -17,7 +17,9 @@ set notimeout
 
 " Remaps
 " :actionlist
-nnoremap <Leader>gI :action GotoImplementation<CR>
-nnoremap <Leader>gd :action GotoDeclaration<CR>
-nnoremap <Leader>gr :action FindUsages<CR>
-nnoremap <Leader>sf :action SearchEverywhere<CR>
+map <Leader>gI <Action>(GotoImplementation)
+map <Leader>gd <Action>(GotoDeclaration)
+map <Leader>gr <Action>(FindUsages)
+
+map <Leader>se <Action>(SearchEverywhere)
+map <Leader>sg <Action>(FindInPath)
