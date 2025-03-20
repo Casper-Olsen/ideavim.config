@@ -11,12 +11,13 @@ set scrolloff=5
 set clipboard+=unnamedplus
 
 " Plugins
-"Plug 'machakann/vim-highlightedyank'
-"Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-highlightedyank'
 set which-key
 set notimeout
 
 " Remaps
-"nnoremap <leader>si :source ~/.ideavim<CR>
-"nnoremap <leader>d <Action>(GotoImplementation)
+" :actionlist
 nnoremap <Leader>gI :action GotoImplementation<CR>
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+nnoremap <Leader>gr :action FindUsages<CR>
+nnoremap <Leader>sf :action SearchEverywhere<CR>
