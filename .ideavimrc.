@@ -9,6 +9,7 @@ set smartcase
 set hlsearch
 set scrolloff=5
 set clipboard+=unnamedplus
+set relativenumber 
 
 """ Plugins
 Plug 'machakann/vim-highlightedyank'
@@ -34,4 +35,8 @@ map <Leader>al <Action>(ShowIntentionActions)
 
 map <Leader>ge <Action>(GotoNextError)
 map <Leader>gE <Action>(GotoPreviousError)
+
+map <Leader>bp <Action>(ToggleLineBreakpoint)
+map <Leader>si <Action>(StepInto)
+map <Leader>so <Action>(StepOver)
 
