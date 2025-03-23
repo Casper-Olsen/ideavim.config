@@ -1,8 +1,8 @@
-" Leader
+""" Leader
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-" Global
+""" Global
 set incsearch
 set ignorecase
 set smartcase
@@ -10,16 +10,25 @@ set hlsearch
 set scrolloff=5
 set clipboard+=unnamedplus
 
-" Plugins
+""" Plugins
 Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
 set which-key
 set notimeout
 
-" Remaps
+""" Remaps
 " :actionlist
 map <Leader>gI <Action>(GotoImplementation)
 map <Leader>gd <Action>(GotoDeclaration)
+map <Leader>gD <Action>(GotoDeclaration)
 map <Leader>gr <Action>(FindUsages)
 
 map <Leader>se <Action>(SearchEverywhere)
 map <Leader>sg <Action>(FindInPath)
+
+map <Leader>rt <Action>(Refactorings.QuickListPopupAction) 
+map <Leader>rr <Action>(RenameElement) 
+ 
+" Alt + Enter
+map <Leader>al <Action>(ShowIntentionActions) 
+
