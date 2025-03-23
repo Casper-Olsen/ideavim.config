@@ -32,3 +32,6 @@ map <Leader>rr <Action>(RenameElement)
 " Alt + Enter
 map <Leader>al <Action>(ShowIntentionActions) 
 
+map <Leader>ge <Action>(GotoNextError)
+map <Leader>gE <Action>(GotoPreviousError)
+
