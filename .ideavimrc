@@ -42,4 +42,7 @@ map <Leader>so <Action>(StepOver)
 map <Leader>dr <Action>(Resume)
 map <Leader>ds <Action>(Stop)
 
+map <Leader>ur <Action>(RiderUnitTestRunContextAction)
+map <Leader>ud <Action>(RiderUnitTestDebugContextAction)
+
 map <Leader>sn :e ~/.ideavimrc<CR>
