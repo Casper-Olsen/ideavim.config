@@ -30,13 +30,16 @@ map <Leader>sg <Action>(FindInPath)
 map <Leader>rt <Action>(Refactorings.QuickListPopupAction) 
 map <Leader>rr <Action>(RenameElement) 
  
-" Alt + Enter
+" Alt + Enter (action list)
 map <Leader>al <Action>(ShowIntentionActions) 
 
 map <Leader>ge <Action>(GotoNextError)
 map <Leader>gE <Action>(GotoPreviousError)
 
-map <Leader>bp <Action>(ToggleLineBreakpoint)
+map <Leader>db <Action>(ToggleLineBreakpoint)
 map <Leader>si <Action>(StepInto)
 map <Leader>so <Action>(StepOver)
+map <Leader>dr <Action>(Resume)
+map <Leader>ds <Action>(Stop)
 
+map <Leader>sn :e ~/.ideavimrc<CR>
