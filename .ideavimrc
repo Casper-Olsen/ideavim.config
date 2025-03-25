@@ -19,30 +19,41 @@ set notimeout
 
 """ Remaps
 " :actionlist
+
+"" Goto
 map <Leader>gI <Action>(GotoImplementation)
 map <Leader>gd <Action>(GotoDeclaration)
 map <Leader>gD <Action>(GotoDeclaration)
 map <Leader>gr <Action>(FindUsages)
 
+"" Search 
 map <Leader>se <Action>(SearchEverywhere)
 map <Leader>sg <Action>(FindInPath)
+map <Leader>sn :e ~/.ideavimrc<CR>
 
+"" Refactor
 map <Leader>rt <Action>(Refactorings.QuickListPopupAction) 
 map <Leader>rr <Action>(RenameElement) 
- 
 " Alt + Enter (action list)
 map <Leader>al <Action>(ShowIntentionActions) 
 
+"" Find errors
 map <Leader>ge <Action>(GotoNextError)
 map <Leader>gE <Action>(GotoPreviousError)
 
+"" Debugging
 map <Leader>db <Action>(ToggleLineBreakpoint)
 map <Leader>si <Action>(StepInto)
 map <Leader>so <Action>(StepOver)
 map <Leader>dr <Action>(Resume)
 map <Leader>ds <Action>(Stop)
 
+"" Test
 map <Leader>ur <Action>(RiderUnitTestRunContextAction)
 map <Leader>ud <Action>(RiderUnitTestDebugContextAction)
 
-map <Leader>sn :e ~/.ideavimrc<CR>
+"" Files
+map <Leader>cw <Action>(CloseContent)
+map <Leader>pt <Action>(PinActiveTab)
+map <Leader>nf <Action>(NewElementSamePlace)
+
