@@ -20,11 +20,12 @@ set notimeout
 """ Remaps
 " :actionlist
 
-"" Goto
+"" Goto/Find
 map <Leader>gI <Action>(GotoImplementation)
 map <Leader>gd <Action>(GotoDeclaration)
 map <Leader>gD <Action>(GotoDeclaration)
 map <Leader>gr <Action>(FindUsages)
+map <Leader>hi <Action>(ShowHoverInfo)
 
 "" Search 
 map <Leader>se <Action>(SearchEverywhere)
