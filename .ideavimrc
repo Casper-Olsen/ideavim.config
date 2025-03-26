@@ -9,7 +9,8 @@ set smartcase
 set hlsearch
 set scrolloff=5
 set clipboard+=unnamedplus
-set relativenumber 
+" Also add: Editor -> General -> Appearance -> Show line numbers = Hybrid
+set relativenumber number 
 
 """ Plugins
 Plug 'machakann/vim-highlightedyank'
