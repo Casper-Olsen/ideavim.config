@@ -66,3 +66,8 @@ map <Leader>pt <Action>(PinActiveTab)
 map <Leader>ct <Action>(CloseAllUnpinnedEditors)
 map <Leader>nf <Action>(NewElementSamePlace)
 
+"" Navigation
+map <Leader>nw <Action>(NextWindow)
+
+"" Code cleanup
+map <Leader>cc <Action>(SilentCodeCleanup)
