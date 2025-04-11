@@ -67,10 +67,15 @@ map <Leader>ct <Action>(CloseAllUnpinnedEditors)
 map <Leader>nf <Action>(NewElementSamePlace)
 
 "" Navigation
-map - <Action>(ActivateProjectToolWindow)
 map <C-w>w <Action>(NextWindow)
 map <C-w><C-w> <Action>(NextWindow)
-map <Leader>uw <Action>(ActivateUnitTestsToolWindow)
+
+map <Leader>wu <Action>(ActivateUnitTestsToolWindow)
+map <Leader>wU <Action>(ActivateUnitTestsToolWindow) <Action>(HideActiveWindow)
+
+map - <Action>(ActivateProjectToolWindow)
+map <Leader>wp <Action>(ActivateProjectToolWindow)
+map <Leader>wP <Action>(ActivateProjectToolWindow) <Action>(HideActiveWindow)
 
 "" Code cleanup
 map <Leader>cc <Action>(SilentCodeCleanup)
